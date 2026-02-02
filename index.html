@@ -3,31 +3,62 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Elias Oerke — Senior Marketplace Consultant · Co-Founder & COO (MintUp)" />
   <title>Elias Oerke — CV</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <main class="page">
-    <header class="header">
-      <div>
-        <h1>Elias Oerke</h1>
-        <p class="subtitle">Senior Marketplace Consultant · Co-Founder & COO (MintUp)</p>
-        <p class="meta">
-          Hamburg, Germany · <a href="mailto:elias.oerke@gmail.com">elias.oerke@gmail.com</a> ·
-          <a href="https://www.linkedin.com/in/elias-oerke-8b2510187" target="_blank" rel="noreferrer">LinkedIn</a>
-        </p>
+    <!-- HERO -->
+    <header class="hero card">
+      <div class="hero-left">
+        <!-- Put profile.jpg in the repo root (same folder as this file) -->
+        <img class="avatar" src="profile.jpg" alt="Elias Oerke profile photo" />
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-top">
+          <div>
+            <h1>Elias Oerke</h1>
+            <p class="subtitle">Senior Marketplace Consultant · Co-Founder & COO (MintUp)</p>
+
+            <p class="meta">
+              Hamburg, Germany ·
+              <a href="mailto:YOUR.EMAIL@domain.com">YOUR.EMAIL@domain.com</a> ·
+              <a href="https://www.linkedin.com/in/elias-oerke-8b2510187" target="_blank" rel="noreferrer">LinkedIn</a>
+            </p>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn" href="https://www.linkedin.com/in/elias-oerke-8b2510187" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+            <a class="btn btn-primary" href="#" onclick="window.print(); return false;">
+              Download PDF
+            </a>
+          </div>
+        </div>
+
+        <div class="pills">
+          <div class="pill"><strong>$100M+</strong> GMS managed</div>
+          <div class="pill"><strong>~60%</strong> YoY growth supported</div>
+          <div class="pill">Built consumer product (MintUp)</div>
+        </div>
       </div>
     </header>
 
+    <!-- PROFILE -->
     <section class="card">
       <h2>Profile</h2>
-      <p>
+      <p class="lead">
         Marketplace & e-commerce professional with experience across consulting, brand/portfolio management,
         and building a consumer product. Strong in data-driven decision-making, stakeholder management,
         and translating insights into growth execution.
       </p>
     </section>
 
+    <!-- EXPERIENCE -->
     <section class="card">
       <h2>Experience</h2>
 
@@ -68,10 +99,11 @@
       </article>
     </section>
 
+    <!-- EDUCATION / SKILLS -->
     <section class="grid">
       <div class="card">
         <h2>Education</h2>
-        <ul>
+        <ul class="simple">
           <li><strong>M.Sc. International Business</strong> — Maastricht University (2020–2021)</li>
           <li><strong>B.Sc. Business Administration</strong> — Otto-von-Guericke University Magdeburg (2016–2020)</li>
         </ul>
@@ -79,12 +111,20 @@
 
       <div class="card">
         <h2>Skills</h2>
-        <p class="tags">
-          Marketplace Strategy · Growth · Performance Analytics · Stakeholder Management · SQL · Python (analytics/automation) · Excel
-        </p>
+        <div class="tags">
+          <span class="tag">Marketplace Strategy</span>
+          <span class="tag">Growth</span>
+          <span class="tag">Performance Analytics</span>
+          <span class="tag">Stakeholder Management</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Python (analytics/automation)</span>
+          <span class="tag">Excel</span>
+        </div>
+
+        <div class="spacer"></div>
 
         <h2>Languages</h2>
-        <ul>
+        <ul class="simple">
           <li>German — Native</li>
           <li>English — Professional</li>
           <li>Spanish — Elementary</li>
@@ -93,7 +133,10 @@
     </section>
 
     <footer class="footer">
-      <p>Download: <a href="#" onclick="window.print(); return false;">Print / Save as PDF</a></p>
+      <p>
+        Tip: Keep the PDF version for applications, and share this link as your “nice” CV.
+        Hosted for free via :contentReference[oaicite:1]{index=1}.
+      </p>
     </footer>
   </main>
 </body>
